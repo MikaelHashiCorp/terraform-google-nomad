@@ -49,7 +49,7 @@ module "nomad_servers" {
   assign_public_ip_addresses = true
 
   # To enable external access to the Nomad Cluster, enter the approved CIDR Blocks below.
-  allowed_inbound_cidr_blocks_http = ["0.0.0.0/0"]
+  allowed_inbound_cidr_blocks_http = ["73.109.72.170/32"]
 
   # Enable the Consul Cluster to reach the Nomad Cluster
   allowed_inbound_tags_http = [var.consul_server_cluster_name, var.nomad_client_cluster_name]

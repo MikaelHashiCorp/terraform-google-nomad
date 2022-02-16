@@ -48,7 +48,7 @@ module "nomad_and_consul_servers" {
   assign_public_ip_addresses = true
 
   # To enable external access to the Nomad Cluster, enter the approved CIDR Blocks below.
-  allowed_inbound_cidr_blocks_http_api = ["0.0.0.0/0"]
+  allowed_inbound_cidr_blocks_http_api = ["73.109.72.170/32"]
 
   # Enable the Nomad clients to reach the Nomad/Consul Server Cluster
   allowed_inbound_tags_http_api = [var.nomad_client_cluster_name]
@@ -66,7 +66,7 @@ module "nomad_firewall_rules" {
   rpc_port  = 4647
   serf_port = 4648
 
-  allowed_inbound_cidr_blocks_http = ["0.0.0.0/0"]
+  allowed_inbound_cidr_blocks_http = ["73.109.72.170/32"]
 }
 
 # Render the Startup Script that will run on each Nomad Instance on boot. This script will configure and start Nomad.
