@@ -1,0 +1,8 @@
+gcp_project                = "hc-98f909dad849425b9ad53d1e7e8"
+gcp_region                 = "us-west1"
+nomad_server_cluster_name  = "nomad-server"
+nomad_server_source_image  = "nomad-consul-ubuntu18-2022-02-15-110946"
+nomad_client_cluster_name  = "nomad-client"
+nomad_client_source_image  = "nomad-consul-ubuntu18-2022-02-15-110946"
+consul_server_cluster_name = "consul-server"
+consul_server_source_image = "nomad-consul-ubuntu18-2022-02-15-110946"
