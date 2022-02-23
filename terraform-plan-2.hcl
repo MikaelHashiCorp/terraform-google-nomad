@@ -6,7 +6,7 @@ plan. Resource actions are indicated with the following symbols:
 
 Terraform will perform the following actions:
 
-  # module.consul_cluster.data.template_file.compute_instance_template_self_link will be read during apply
+ # module.consul_cluster.data.template_file.compute_instance_template_self_link will be read during apply
   # (config refers to values not yet known)
  <= data "template_file" "compute_instance_template_self_link"  {
       + id       = (known after apply)
@@ -14,7 +14,7 @@ Terraform will perform the following actions:
       + template = (known after apply)
     }
 
-  # module.consul_cluster.google_compute_firewall.allow_inbound_dns[0] will be created
+ # module.consul_cluster.google_compute_firewall.allow_inbound_dns[0] will be created
   + resource "google_compute_firewall" "allow_inbound_dns" {
       + creation_timestamp = (known after apply)
       + destination_ranges = (known after apply)
@@ -48,7 +48,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.consul_cluster.google_compute_firewall.allow_inbound_http_api[0] will be created
+ # module.consul_cluster.google_compute_firewall.allow_inbound_http_api[0] will be created
   + resource "google_compute_firewall" "allow_inbound_http_api" {
       + creation_timestamp = (known after apply)
       + destination_ranges = (known after apply)
@@ -76,7 +76,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.consul_cluster.google_compute_firewall.allow_intracluster_consul will be created
+ # module.consul_cluster.google_compute_firewall.allow_intracluster_consul will be created
   + resource "google_compute_firewall" "allow_intracluster_consul" {
       + creation_timestamp = (known after apply)
       + destination_ranges = (known after apply)
@@ -116,7 +116,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.consul_cluster.google_compute_instance_template.consul_server_public[0] will be created
+ # module.consul_cluster.google_compute_instance_template.consul_server_public[0] will be created
   + resource "google_compute_instance_template" "consul_server_public" {
       + can_ip_forward          = false
       + id                      = (known after apply)
@@ -197,7 +197,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.consul_cluster.google_compute_region_instance_group_manager.consul_server will be created
+ # module.consul_cluster.google_compute_region_instance_group_manager.consul_server will be created
   + resource "google_compute_region_instance_group_manager" "consul_server" {
       + base_instance_name               = "consul-server"
       + distribution_policy_target_shape = (known after apply)
@@ -230,7 +230,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_clients.data.template_file.compute_instance_template_self_link will be read during apply
+ # module.nomad_clients.data.template_file.compute_instance_template_self_link will be read during apply
   # (config refers to values not yet known)
  <= data "template_file" "compute_instance_template_self_link"  {
       + id       = (known after apply)
@@ -238,7 +238,7 @@ Terraform will perform the following actions:
       + template = (known after apply)
     }
 
-  # module.nomad_clients.google_compute_instance_template.nomad_public[0] will be created
+ # module.nomad_clients.google_compute_instance_template.nomad_public[0] will be created
   + resource "google_compute_instance_template" "nomad_public" {
       + can_ip_forward          = false
       + id                      = (known after apply)
@@ -321,7 +321,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_clients.google_compute_region_instance_group_manager.nomad will be created
+ # module.nomad_clients.google_compute_region_instance_group_manager.nomad will be created
   + resource "google_compute_region_instance_group_manager" "nomad" {
       + base_instance_name               = "nomad-client"
       + distribution_policy_target_shape = (known after apply)
@@ -354,7 +354,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_servers.data.template_file.compute_instance_template_self_link will be read during apply
+ # module.nomad_servers.data.template_file.compute_instance_template_self_link will be read during apply
   # (config refers to values not yet known)
  <= data "template_file" "compute_instance_template_self_link"  {
       + id       = (known after apply)
@@ -362,7 +362,7 @@ Terraform will perform the following actions:
       + template = (known after apply)
     }
 
-  # module.nomad_servers.google_compute_instance_template.nomad_public[0] will be created
+ # module.nomad_servers.google_compute_instance_template.nomad_public[0] will be created
   + resource "google_compute_instance_template" "nomad_public" {
       + can_ip_forward          = false
       + id                      = (known after apply)
@@ -443,7 +443,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_servers.google_compute_region_instance_group_manager.nomad will be created
+ # module.nomad_servers.google_compute_region_instance_group_manager.nomad will be created
   + resource "google_compute_region_instance_group_manager" "nomad" {
       + base_instance_name               = "nomad-server"
       + distribution_policy_target_shape = (known after apply)
@@ -476,7 +476,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_clients.module.firewall_rules.google_compute_firewall.allow_inbound_http[0] will be created
+ # module.nomad_clients.module.firewall_rules.google_compute_firewall.allow_inbound_http[0] will be created
   + resource "google_compute_firewall" "allow_inbound_http" {
       + creation_timestamp = (known after apply)
       + destination_ranges = (known after apply)
@@ -504,7 +504,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_clients.module.firewall_rules.google_compute_firewall.allow_inbound_rpc[0] will be created
+ # module.nomad_clients.module.firewall_rules.google_compute_firewall.allow_inbound_rpc[0] will be created
   + resource "google_compute_firewall" "allow_inbound_rpc" {
       + creation_timestamp = (known after apply)
       + destination_ranges = (known after apply)
@@ -531,7 +531,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_clients.module.firewall_rules.google_compute_firewall.allow_inbound_serf[0] will be created
+ # module.nomad_clients.module.firewall_rules.google_compute_firewall.allow_inbound_serf[0] will be created
   + resource "google_compute_firewall" "allow_inbound_serf" {
       + creation_timestamp = (known after apply)
       + destination_ranges = (known after apply)
@@ -564,7 +564,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_servers.module.firewall_rules.google_compute_firewall.allow_inbound_http[0] will be created
+ # module.nomad_servers.module.firewall_rules.google_compute_firewall.allow_inbound_http[0] will be created
   + resource "google_compute_firewall" "allow_inbound_http" {
       + creation_timestamp = (known after apply)
       + destination_ranges = (known after apply)
@@ -595,7 +595,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_servers.module.firewall_rules.google_compute_firewall.allow_inbound_rpc[0] will be created
+ # module.nomad_servers.module.firewall_rules.google_compute_firewall.allow_inbound_rpc[0] will be created
   + resource "google_compute_firewall" "allow_inbound_rpc" {
       + creation_timestamp = (known after apply)
       + destination_ranges = (known after apply)
@@ -623,7 +623,7 @@ Terraform will perform the following actions:
         }
     }
 
-  # module.nomad_servers.module.firewall_rules.google_compute_firewall.allow_inbound_serf[0] will be created
+ # module.nomad_servers.module.firewall_rules.google_compute_firewall.allow_inbound_serf[0] will be created
   + resource "google_compute_firewall" "allow_inbound_serf" {
       + creation_timestamp = (known after apply)
       + destination_ranges = (known after apply)

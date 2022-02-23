@@ -5,6 +5,9 @@ output "gcp_project" {
 output "gcp_region" {
   value = var.gcp_region
 }
+output "gcp_zone" {
+  value = var.gcp_zone
+}
 
 output "nomad_server_cluster_size" {
   value = var.nomad_server_cluster_size

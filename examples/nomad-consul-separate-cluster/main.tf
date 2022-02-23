@@ -15,6 +15,7 @@
 provider "google" {
   project = var.gcp_project
   region  = var.gcp_region
+  zone    = var.gcp_zone
 }
 
 terraform {
@@ -75,7 +76,8 @@ module "consul_cluster" {
   source = "git::git@github.com:hashicorp/terraform-google-consul.git//modules/consul-cluster?ref=v0.4.0"
 
   gcp_project_id = var.gcp_project
-  gcp_region = var.gcp_region
+  gcp_region     = var.gcp_region
+  gpc_zone       = var.gcp_zone 
 
   cluster_name     = var.consul_server_cluster_name
   cluster_tag_name = var.consul_server_cluster_name
