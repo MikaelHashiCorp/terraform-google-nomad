@@ -13,6 +13,11 @@ variable "gcp_region" {
   type        = string
 }
 
+variable "gcp_zone" {
+  description = "The zone in which all GCP resources will be launched."
+  type        = string
+}
+
 # Nomad Server cluster
 
 variable "nomad_server_cluster_name" {
