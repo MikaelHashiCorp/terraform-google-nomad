@@ -79,6 +79,10 @@ job "example" {
   #     https://www.nomadproject.io/docs/job-specification/group.html
   #
   group "cache" {
+    network {
+      port "db" {}
+    }
+    
     # The "count" parameter specifies the number of the task groups that should
     # be running under this group. This value must be non-negative and defaults
     # to 1.
@@ -202,10 +206,6 @@ job "example" {
       resources {
         cpu    = 500 # 500 MHz
         memory = 256 # 256MB
-        network {
-          mbits = 10
-          port "db" {}
-        }
       }
 
       # The "service" stanza instructs Nomad to register this task as a service
